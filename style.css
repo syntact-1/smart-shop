@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    font-family:cursive;
+    background-color: rgb(220, 231, 240);
+    color: rgb(76, 76, 76);
+}
+.container{
+    display: flex;
+}
+.logo{
+    font-size: 19px;
+    padding: 5px;
+
+}
+.container .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav-bar .list {
+    display: flex;
+    list-style: none;
+}
+.nav-bar .list li{
+    margin: 20px;
+}
+.nav-bar .list li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow:1rem 1rem 1.1rem rgb(200, 219, 237);;
+
+}
+.nav-bar .list li a:hover{
+    text-decoration: underline;
+    color: rgb(246, 110, 110);
+}
+.nav-bar .list li .home{
+    color: rgb(246, 110, 110);
+}
+button{
+    background-color:rgb(246, 110, 110);
+    color: white;
+    border: 0;
+    height: 30px;
+    width: 70px; 
+    border-radius: 7px;
+    transition: .5s;
+    box-shadow:.1rem 1rem 1.1rem rgb(128, 93, 93);
+}
+button:hover{
+    scale: 1.1;
+    background-color: rgb(167, 138, 138);
+}
+.content{
+    position: relative;
+    bottom: -40px;
+    font-size: 30px;
+    padding: 40px;
+}
+.content .title{
+    align-items: center;
+}
+.display{
+    position: relative;
+    bottom: -70px; 
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+.display .image img{
+    position: relative;
+    top: -140px;
+    width: 300px;
+    height: 300px;
+    animation-name: watch-animate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.display p{
+    width: 50%;
+    position: relative;
+    bottom: 120px;
+}
+.boxs{
+    display: flex;
+    padding: 80px;
+    position: relative;
+    bottom: 180px;
+}
+.boxs div{
+    width: 100px;
+    height: 150px;
+    background-color: rgb(252, 233, 233);
+    margin: 10px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    box-shadow:1.6rem 1rem 1.6rem gray;
+
+}
+.boxs div img{
+    width: 100px;
+    height: 90px;
+    transition: .5s;
+}
+.boxs div:hover{
+    scale: 1.1;
+}
+
+@keyframes watch-animate{
+    0%{
+        scale: 1;
+    }
+    25%{
+        scale: 1.05;
+    }
+}
+@media (max-width:600px) {
+    .logo{
+        font-size: 12px;
+    }
+    .container{
+        display: flex;
+    }
+    .container .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .nav-bar .list li{
+        margin: 10px;
+    }
+    .content{
+        position: relative;
+        bottom: 40px;
+        font-size: 25px;
+        padding: 40px;
+    }
+    .display p{
+        width: 50%;
+        position: relative;
+        bottom: 170px;
+        right: 50px;
+    }
+    .display{
+        position: relative;
+        bottom: -70px; 
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+     
+    }
+    .display .image img{
+        position: relative;
+        top: -140px;
+        width: 300px;
+        height: 300px;
+    }
+    .boxs{
+        display: flex;
+        padding: 80px;
+        position: relative;
+        bottom: 180px;
+        align-items: center;
+        justify-content: center;
+    }
+    .boxs div{
+        width: 100px;
+        height: 140px;
+        background-color: rgb(252, 233, 233);
+        margin: 10px;
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .boxs div img{
+        width: 50px;
+        height: 100px;
+    }
+} 
